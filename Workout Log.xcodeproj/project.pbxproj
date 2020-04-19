@@ -15,6 +15,8 @@
 		059D45EE244CF71E009C14F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059D45EC244CF71E009C14F6 /* LaunchScreen.storyboard */; };
 		059D45F9244CF71E009C14F6 /* Workout_LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D45F8244CF71E009C14F6 /* Workout_LogTests.swift */; };
 		059D4604244CF71E009C14F6 /* Workout_LogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D4603244CF71E009C14F6 /* Workout_LogUITests.swift */; };
+		059D4612244D0801009C14F6 /* TextAndIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D4611244D0801009C14F6 /* TextAndIconButton.swift */; };
+		059D4614244D0D3D009C14F6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D4613244D0D3D009C14F6 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		059D45FF244CF71E009C14F6 /* Workout LogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout LogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D4603244CF71E009C14F6 /* Workout_LogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_LogUITests.swift; sourceTree = "<group>"; };
 		059D4605244CF71E009C14F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		059D4611244D0801009C14F6 /* TextAndIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndIconButton.swift; sourceTree = "<group>"; };
+		059D4613244D0D3D009C14F6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				059D45E1244CF71C009C14F6 /* AppDelegate.swift */,
 				059D45E3244CF71C009C14F6 /* SceneDelegate.swift */,
 				059D45E5244CF71C009C14F6 /* ContentView.swift */,
+				059D4611244D0801009C14F6 /* TextAndIconButton.swift */,
+				059D4613244D0D3D009C14F6 /* Colors.swift */,
 				059D45E7244CF71D009C14F6 /* Assets.xcassets */,
 				059D45EC244CF71E009C14F6 /* LaunchScreen.storyboard */,
 				059D45EF244CF71E009C14F6 /* Info.plist */,
@@ -268,8 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				059D45E2244CF71C009C14F6 /* AppDelegate.swift in Sources */,
+				059D4614244D0D3D009C14F6 /* Colors.swift in Sources */,
 				059D45E4244CF71C009C14F6 /* SceneDelegate.swift in Sources */,
 				059D45E6244CF71C009C14F6 /* ContentView.swift in Sources */,
+				059D4612244D0801009C14F6 /* TextAndIconButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
