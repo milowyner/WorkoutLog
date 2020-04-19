@@ -12,6 +12,8 @@ struct TextAndIconButton: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 16)
             .fill(Color.buttonBackground)
+        .overlay(
+            Text("Create New Workout"))
     }
 }
 
