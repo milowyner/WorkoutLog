@@ -9,17 +9,26 @@
 import SwiftUI
 
 struct TextAndIconButton: View {
+    var text: String
+    var icon: String
+    
     var body: some View {
-        RoundedRectangle(cornerRadius: 16)
-            .fill(Color.buttonBackground)
-        .overlay(
-            Text("Create New Workout"))
+        HStack(spacing: 12.0) {
+            Text(text)
+                .fontWeight(.semibold)
+            Image(icon)
+        }
+        .padding([.top, .bottom, .trailing], 12.0)
+        .padding(.leading, 16.0)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color.buttonBackground)
+        )
     }
 }
 
 struct TextAndIconButton_Previews: PreviewProvider {
     static var previews: some View {
-        TextAndIconButton()
-            .frame(width: 200, height: 50, alignment: .center)
+        TextAndIconButton(text: "Create New Workout", icon: "icon-plus")
     }
 }
