@@ -19,6 +19,11 @@ struct ContentView: View {
                 Spacer()
             }
             Spacer()
+            HStack {
+                Spacer()
+                TextAndIconButton(text: "Create New Workout", icon: "icon-plus")
+            }
+            .padding(32.0)
         }
     }
 }
