@@ -21,7 +21,7 @@ struct ContentView: View {
             Spacer()
             HStack {
                 Spacer()
-                TextAndIconButton(action: {
+                CustomButton(action: {
                     print("Button tapped")
                 }, text: "Create New Workout", icon: "icon-plus")
             }

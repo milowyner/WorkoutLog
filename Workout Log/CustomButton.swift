@@ -1,5 +1,5 @@
 //
-//  TextAndIconButton.swift
+//  CustomButton.swift
 //  Workout Log
 //
 //  Created by Milo Wyner on 4/19/20.
@@ -20,7 +20,7 @@ struct CustomButton: View {
                     Text(text!)
                         .fontWeight(.semibold)
                         .padding([.leading, .trailing], 4.0)
-                        .frame(height: 24.0)
+                        .frame(minHeight: 24.0)
                 }
                 if icon != nil {
                     Image(icon!)
