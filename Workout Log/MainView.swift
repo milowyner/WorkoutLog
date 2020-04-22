@@ -15,7 +15,6 @@ struct MainView: View {
                 Text("Workout Log")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .padding([.leading, .top], 32.0)
                 Spacer()
             }
             Spacer()
@@ -25,8 +24,8 @@ struct MainView: View {
                     print("Button tapped")
                 }, text: "Create New Workout", icon: "icon-plus")
             }
-            .padding(32.0)
         }
+        .padding(32.0)
     }
 }
 
