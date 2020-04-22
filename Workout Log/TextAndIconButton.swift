@@ -10,19 +10,24 @@ import SwiftUI
 
 struct TextAndIconButton: View {
     var action: () -> Void
-    var text: String
-    var icon: String
+    var text: String?
+    var icon: String?
     
     var body: some View {
         Button(action: action, label: {
-            HStack(spacing: 12.0) {
-                Text(text)
-                    .fontWeight(.semibold)
-                Image(icon)
+            HStack(spacing: 8.0) {
+                if text != nil {
+                    Text(text!)
+                        .fontWeight(.semibold)
+                        .padding([.leading, .trailing], 4.0)
+                        .frame(height: 24.0)
+                }
+                if icon != nil {
+                    Image(icon!)
+                }
             }
             .foregroundColor(.primary)
-            .padding([.top, .bottom, .trailing], 12.0)
-            .padding(.leading, 16.0)
+            .padding(12.0)
             .background(
                 RoundedRectangle(cornerRadius: 16)
                     .fill(Color.buttonBackground)
