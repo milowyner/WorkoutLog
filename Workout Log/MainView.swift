@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Workout Log
 //
 //  Created by Milo Wyner on 4/19/20.
