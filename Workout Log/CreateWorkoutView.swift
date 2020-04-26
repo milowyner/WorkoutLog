@@ -24,11 +24,11 @@ struct CreateWorkoutView: View {
             HStack {
                 CustomButton(action: {
                     print("Done button tapped")
-                }, icon: "icon-checkmark")
+                }, size: .large, icon: "icon-checkmark")
                 Spacer()
                 CustomButton(action: {
                     print("Add exercise button tapped")
-                }, text: "Add Exercise", icon: "icon-plus")
+                }, size: .large, text: "Add Exercise", icon: "icon-plus")
             }
         }
         .padding(32.0)

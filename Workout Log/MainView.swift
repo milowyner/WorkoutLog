@@ -22,7 +22,7 @@ struct MainView: View {
                 Spacer()
                 CustomButton(action: {
                     print("Button tapped")
-                }, text: "Create New Workout", icon: "icon-plus")
+                }, size: .large, text: "Create New Workout", icon: "icon-plus")
             }
         }
         .padding(32.0)
