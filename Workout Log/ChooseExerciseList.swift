@@ -1,5 +1,5 @@
 //
-//  Exercise Scroll View.swift
+//  ChooseExerciseList.swift
 //  Workout Log
 //
 //  Created by Milo Wyner on 4/26/20.
@@ -8,14 +8,26 @@
 
 import SwiftUI
 
-struct Exercise_Scroll_View: View {
+struct ChooseExerciseList: View {
+    var exercises = [String](repeating: "Exercise", count: 15)
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical, showsIndicators: true) {
+            VStack {
+                ForEach(exercises, id: \.self) { exercise in
+                    HStack {
+                        CustomButton(size: .medium, text: exercise)
+                        Spacer()
+                    }
+                }
+                .padding(.bottom, 16.0)
+            }
+        }
     }
 }
 
-struct Exercise_Scroll_View_Previews: PreviewProvider {
+struct ChooseExerciseList_Previews: PreviewProvider {
     static var previews: some View {
-        Exercise_Scroll_View()
+        ChooseExerciseList()
+            .previewLayout(.fixed(width: 300, height: 300))
     }
 }
