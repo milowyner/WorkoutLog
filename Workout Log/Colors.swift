@@ -10,4 +10,5 @@ import SwiftUI
 
 extension Color {
     static var buttonBackground: Color { Color("Button Background") }
+    static var containerBackground: Color { Color("Container Background") }
 }
