@@ -22,13 +22,13 @@ struct CreateWorkoutView: View {
             }
             Spacer()
             HStack {
-                CustomButton(action: {
+                CustomButton(size: .large, icon: "icon-checkmark") {
                     print("Done button tapped")
-                }, size: .large, icon: "icon-checkmark")
+                }
                 Spacer()
-                CustomButton(action: {
+                CustomButton(size: .large, text: "Add Exercise", icon: "icon-plus") {
                     print("Add exercise button tapped")
-                }, size: .large, text: "Add Exercise", icon: "icon-plus")
+                }
             }
         }
         .padding(32.0)

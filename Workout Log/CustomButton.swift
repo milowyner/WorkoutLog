@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct CustomButton: View {
-    var action: () -> Void
     var size: ButtonSize
     var text: String?
     var icon: String?
+    var action: (() -> Void)?
     
     private var cornerRadius: CGFloat {
         switch size {
@@ -34,7 +34,7 @@ struct CustomButton: View {
     }
     
     var body: some View {
-        Button(action: action, label: {
+        Button(action: action ?? {}, label: {
             HStack(spacing: padding / 2) {
                 if text != nil {
                     Text(text!)
@@ -67,17 +67,17 @@ struct TextAndIconButton_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            CustomButton(action: {}, size: .large, text: buttonLabel, icon: plusIcon)
+            CustomButton(size: .large, text: buttonLabel, icon: plusIcon)
                 .previewDisplayName("Text and icon")
-            CustomButton(action: {}, size: .large, text: buttonLabel)
+            CustomButton(size: .large, text: buttonLabel)
                 .previewDisplayName("Text")
-            CustomButton(action: {}, size: .large, icon: plusIcon)
+            CustomButton(size: .large, icon: plusIcon)
                 .previewDisplayName("Icon")
-            CustomButton(action: {}, size: .medium, text: buttonLabel)
+            CustomButton(size: .medium, text: buttonLabel)
                 .previewDisplayName("Medium text")
-            CustomButton(action: {}, size: .medium, icon: plusIcon)
+            CustomButton(size: .medium, icon: plusIcon)
                 .previewDisplayName("Medium icon")
-            CustomButton(action: {}, size: .medium, text: buttonLabel, icon: plusIcon)
+            CustomButton(size: .medium, text: buttonLabel, icon: plusIcon)
                 .previewDisplayName("Medium text and icon")
         }
         .previewLayout(.fixed(width: 300, height: 100))

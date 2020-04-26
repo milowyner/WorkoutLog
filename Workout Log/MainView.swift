@@ -20,9 +20,9 @@ struct MainView: View {
             Spacer()
             HStack {
                 Spacer()
-                CustomButton(action: {
+                CustomButton(size: .large, text: "Create New Workout", icon: "icon-plus") {
                     print("Button tapped")
-                }, size: .large, text: "Create New Workout", icon: "icon-plus")
+                }
             }
         }
         .padding(32.0)
