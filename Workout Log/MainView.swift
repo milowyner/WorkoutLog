@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var currentPage: CurrentPage
+    
     var body: some View {
         VStack {
             HStack {
@@ -22,6 +24,7 @@ struct MainView: View {
                 Spacer()
                 CustomButton(size: .large, text: "Create New Workout", icon: "icon-plus") {
                     print("Button tapped")
+                    self.currentPage.isMainView = false
                 }
             }
         }
