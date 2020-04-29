@@ -17,6 +17,18 @@ struct RootView: View {
                 MainView()
             } else {
                 CreateWorkoutView()
+                    .transition(.asymmetric(
+                        insertion:
+                            AnyTransition.opacity.combined(with:
+                            AnyTransition.scale(scale: 0.9)).combined(with:
+                            AnyTransition.offset(
+                                x: (UIScreen.main.bounds.width / 2 - 150) / 4,
+                                y: (UIScreen.main.bounds.height / 2 - 48) / 4)),
+                        removal:
+                            AnyTransition.opacity.combined(with:
+                            AnyTransition.scale(scale: 0.9))
+                    )
+                )
             }
         }
     }

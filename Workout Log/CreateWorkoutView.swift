@@ -25,7 +25,9 @@ struct CreateWorkoutView: View {
             HStack {
                 CustomButton(size: .large, icon: "icon-checkmark") {
                     print("Done button tapped")
-                    self.currentPage.isMainView = true
+                    withAnimation() {
+                        self.currentPage.isMainView = true
+                    }
                 }
                 Spacer()
                 CustomButton(size: .large, text: "Add Exercise", icon: "icon-plus") {

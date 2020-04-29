@@ -23,9 +23,12 @@ struct MainView: View {
             HStack {
                 Spacer()
                 CustomButton(size: .large, text: "Create New Workout", icon: "icon-plus") {
-                    print("Button tapped")
-                    self.currentPage.isMainView = false
+                    withAnimation() {
+                        self.currentPage.isMainView = false
+                    }
                 }
+                .opacity(currentPage.isMainView ? 1 : 0)
+                .scaleEffect(currentPage.isMainView ? 1 : 1.5)
             }
         }
         .padding(32.0)
@@ -34,6 +37,6 @@ struct MainView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView().environmentObject(CurrentPage())
     }
 }
