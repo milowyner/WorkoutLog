@@ -10,5 +10,5 @@ import Foundation
 
 struct ExerciseType {
     var name: String
-    var equipment: String
+    var equipment: String?
 }

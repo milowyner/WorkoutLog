@@ -11,4 +11,15 @@ import Foundation
 struct Exercise {
     var type: ExerciseType
     var sets = [ExerciseSet]()
+    var name: String {
+        get {
+            type.name
+        }
+        set {
+            type.name = newValue
+        }
+    }
+    var numberOfSets: Int {
+        sets.count
+    }
 }
