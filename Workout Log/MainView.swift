@@ -11,24 +11,24 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var currentPage: CurrentPage
     
-    var workouts = [Placeholder.workout1, Placeholder.workout2]
+    var workouts = [Placeholder.workout1, Placeholder.workout2, Placeholder.workout1, Placeholder.workout2]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 16) {
             HStack {
                 Text("Workout Log")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 Spacer()
             }
-            .padding(.bottom, 32)
-            VStack(spacing: 16) {
-                ForEach(workouts) { workout in
-                    WorkoutView(workout: workout)
+            ScrollView(.vertical, showsIndicators: true) {
+                VStack(spacing: 16) {
+                    ForEach(workouts) { workout in
+                        WorkoutView(workout: workout)
+                    }
                 }
             }
             .padding([.leading, .trailing], -16)
-            Spacer()
             HStack {
                 Spacer()
                 CustomButton(size: .large, text: "Create New Workout", icon: "icon-plus") {
