@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Workout {
+struct Workout: Identifiable {
+    var id = UUID()
     var title: String
     var exercises = [Exercise]()
 }

@@ -11,6 +11,8 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var currentPage: CurrentPage
     
+    var workouts = [Placeholder.workout1, Placeholder.workout2]
+    
     var body: some View {
         VStack {
             HStack {
@@ -19,6 +21,13 @@ struct MainView: View {
                     .fontWeight(.bold)
                 Spacer()
             }
+            .padding(.bottom, 32)
+            VStack(spacing: 16) {
+                ForEach(workouts) { workout in
+                    WorkoutView(workout: workout)
+                }
+            }
+            .padding([.leading, .trailing], -16)
             Spacer()
             HStack {
                 Spacer()
