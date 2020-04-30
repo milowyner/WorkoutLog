@@ -24,6 +24,7 @@
 		059FEFF9245A3DFB005C759D /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FEFF8245A3DFB005C759D /* Exercise.swift */; };
 		059FEFFB245A3FB3005C759D /* ExerciseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FEFFA245A3FB3005C759D /* ExerciseType.swift */; };
 		059FEFFD245A40AC005C759D /* ExerciseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FEFFC245A40AC005C759D /* ExerciseSet.swift */; };
+		059FEFFF245A420D005C759D /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FEFFE245A420D005C759D /* WorkoutView.swift */; };
 		05D30952245627E300340F2C /* ChooseExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D30951245627E300340F2C /* ChooseExerciseList.swift */; };
 		05DD3E1C2450FAB100855003 /* CreateWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD3E1B2450FAB100855003 /* CreateWorkoutView.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		059FEFF8245A3DFB005C759D /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		059FEFFA245A3FB3005C759D /* ExerciseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseType.swift; sourceTree = "<group>"; };
 		059FEFFC245A40AC005C759D /* ExerciseSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSet.swift; sourceTree = "<group>"; };
+		059FEFFE245A420D005C759D /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		05D30951245627E300340F2C /* ChooseExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExerciseList.swift; sourceTree = "<group>"; };
 		05DD3E1B2450FAB100855003 /* CreateWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 				05D30951245627E300340F2C /* ChooseExerciseList.swift */,
 				059F823C2456471000F936D3 /* AddExerciseView.swift */,
 				059D4611244D0801009C14F6 /* CustomButton.swift */,
+				059FEFFE245A420D005C759D /* WorkoutView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				059D45E2244CF71C009C14F6 /* AppDelegate.swift in Sources */,
 				059D4614244D0D3D009C14F6 /* Colors.swift in Sources */,
 				059D45E4244CF71C009C14F6 /* SceneDelegate.swift in Sources */,
+				059FEFFF245A420D005C759D /* WorkoutView.swift in Sources */,
 				059FEFFD245A40AC005C759D /* ExerciseSet.swift in Sources */,
 				059F823D2456471000F936D3 /* AddExerciseView.swift in Sources */,
 				059FEFF9245A3DFB005C759D /* Exercise.swift in Sources */,
