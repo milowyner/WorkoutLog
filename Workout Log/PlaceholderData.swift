@@ -26,6 +26,10 @@ struct Placeholder {
         
         Exercise(type: ExerciseType(name: "Lunge"),
                  sets: [ExerciseSet](repeating:
+                    ExerciseSet(weight: 0, reps: 0), count: 3)),
+        
+        Exercise(type: ExerciseType(name: "Squat"),
+                 sets: [ExerciseSet](repeating:
                     ExerciseSet(weight: 0, reps: 0), count: 3))
     ])
 }
