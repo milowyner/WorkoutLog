@@ -19,7 +19,7 @@ struct ChooseExerciseList: View {
                         Spacer()
                     }
                 }
-                .padding(.bottom, 16.0)
+                .padding(.bottom, .paddingMedium)
             }
         }
     }

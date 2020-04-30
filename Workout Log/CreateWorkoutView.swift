@@ -35,7 +35,7 @@ struct CreateWorkoutView: View {
                 }
             }
         }
-        .padding(32.0)
+        .padding(.paddingLarge)
     }
 }
 

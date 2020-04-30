@@ -22,8 +22,8 @@ struct CustomButton: View {
     }
     private var padding: CGFloat {
         switch size {
-        case .medium: return 8.0
-        case .large: return 16.0
+        case .medium: return .paddingSmall
+        case .large: return .paddingMedium
         }
     }
     private var minHeight: CGFloat {

@@ -12,13 +12,13 @@ struct AddExerciseView: View {
     var body: some View {
         VStack(spacing: 0.0) {
             ChooseExerciseList()
-                .padding([.top, .leading, .trailing], 16.0)
+                .padding([.top, .leading, .trailing], .paddingMedium)
             HStack {
                 CustomButton(size: .medium, text: "Create New", icon: "icon-plus")
                 Spacer()
                 CustomButton(size: .medium, icon: "icon-cancel")
             }
-            .padding(16.0)
+            .padding(.paddingMedium)
         }
         .background(Color.containerBackground)
         .cornerRadius(12.0)

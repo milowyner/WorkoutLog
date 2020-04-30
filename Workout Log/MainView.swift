@@ -15,24 +15,24 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            VStack(spacing: 16) {
+            VStack(spacing: .paddingMedium) {
                 HStack {
                     Text("Workout Log")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                     Spacer()
                 }
-                .padding([.leading, .trailing, .top], 32)
+                .padding([.leading, .trailing, .top], .paddingLarge)
                 ScrollView(.vertical, showsIndicators: true) {
-                    VStack(spacing: 16) {
+                    VStack(spacing: .paddingMedium) {
                         ForEach(workouts) { workout in
                             WorkoutView(workout: workout)
                         }
                     }
-                    .padding(.bottom, 48 + 64) // height of button + padding
-                    .padding(.top, 16)
+                    .padding(.top, .paddingMedium)
+                    .padding(.bottom, 48 + .paddingLarge * 2)
                 }
-                .padding([.leading, .trailing], 16)
+                .padding([.leading, .trailing], .paddingMedium)
             }
             VStack {
                 Spacer()
@@ -46,7 +46,7 @@ struct MainView: View {
                     .opacity(currentPage.isMainView ? 1 : 0)
                     .scaleEffect(currentPage.isMainView ? 1 : 1.5)
                 }
-            .padding(32)
+                .padding(.paddingLarge)
             }
         }
     }

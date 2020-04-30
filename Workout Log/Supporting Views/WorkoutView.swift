@@ -13,31 +13,31 @@ struct WorkoutView: View {
     let workout: Workout
     
     var body: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: .paddingMedium) {
             HStack {
                 Text(workout.title)
                     .fontWeight(.semibold)
                 Spacer()
             }
             HStack {
-                VStack(alignment: .leading, spacing: 16) {
+                VStack(alignment: .leading, spacing: .paddingMedium) {
                     ForEach(workout.exercises, id: \.name) { exercise in
                         Text(exercise.name)
                     }
                 }
                 Spacer()
-                VStack(spacing: 16) {
+                VStack(spacing: .paddingMedium) {
                     ForEach(workout.exercises, id: \.name) { exercise in
                         Text("\(exercise.numberOfSets) sets")
                     }
                 }
                 Spacer()
             }
-            .padding(.leading, 8)
+            .padding(.leading, .paddingSmall)
             .font(.system(size: 12, weight: .semibold))
         }
-        .padding(16)
-        .padding(.bottom, 8)
+        .padding(.paddingMedium)
+        .padding(.bottom, .paddingSmall)
         .background(Color.containerBackground)
         .cornerRadius(12)
     }
