@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct AddExerciseView: View {
+    @EnvironmentObject var userData: UserData
     @Binding var isShowing: Bool
     
     var body: some View {
@@ -35,5 +36,6 @@ struct AddExerciseView_Previews: PreviewProvider {
     static var previews: some View {
         AddExerciseView(isShowing: .constant(true))
             .previewLayout(.fixed(width: 375, height: 400))
+        .environmentObject(UserData())
     }
 }

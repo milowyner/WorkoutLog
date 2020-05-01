@@ -9,6 +9,11 @@
 import SwiftUI
 import Combine
 
-final class WorkoutList: ObservableObject {
+final class UserData: ObservableObject {
     @Published var workouts: [Workout] = Placeholder.workoutList
+    @Published var exerciseTypes: Set<ExerciseType> = [
+        ExerciseType(name: "Squat"),
+        ExerciseType(name: "Bench Press"),
+        ExerciseType(name: "Push Up")
+    ]
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ExerciseType {
+struct ExerciseType: Hashable {
     var name: String
-    var equipment: String?
+    var equipment: String? = nil
 }

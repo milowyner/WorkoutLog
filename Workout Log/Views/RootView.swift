@@ -10,7 +10,7 @@ import SwiftUI
 
 struct RootView: View {
     @EnvironmentObject var currentPage: CurrentPage
-    @EnvironmentObject var workoutList: WorkoutList
+    @EnvironmentObject var workoutList: UserData
     
     var body: some View {
         VStack {
@@ -38,6 +38,6 @@ struct RootView: View {
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
         RootView().environmentObject(CurrentPage())
-        .environmentObject(WorkoutList())
+        .environmentObject(UserData())
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CreateWorkoutView: View {
     @EnvironmentObject var currentPage: CurrentPage
-    @EnvironmentObject var workoutList: WorkoutList
+    @EnvironmentObject var workoutList: UserData
     
     @State var showingAddExerciseView = false
     
@@ -82,6 +82,6 @@ struct CreateWorkoutView: View {
 
 struct CreateWorkoutView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateWorkoutView().environmentObject(WorkoutList())
+        CreateWorkoutView().environmentObject(UserData())
     }
 }

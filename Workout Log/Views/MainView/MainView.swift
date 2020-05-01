@@ -10,7 +10,7 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject var currentPage: CurrentPage
-    @EnvironmentObject var workoutList: WorkoutList
+    @EnvironmentObject var workoutList: UserData
     
     var body: some View {
         ZStack {
@@ -55,6 +55,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .environmentObject(CurrentPage())
-            .environmentObject(WorkoutList())
+            .environmentObject(UserData())
     }
 }
