@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct AddExerciseView: View {
+    @Binding var isShowing: Bool
+    
     var body: some View {
         VStack(spacing: 0.0) {
             ChooseExerciseList()
@@ -16,7 +18,11 @@ struct AddExerciseView: View {
             HStack {
                 CustomButton(size: .medium, text: "Create New", icon: "icon-plus")
                 Spacer()
-                CustomButton(size: .medium, icon: "icon-cancel")
+                CustomButton(size: .medium, icon: "icon-cancel") {
+                    withAnimation {
+                        self.isShowing = false
+                    }
+                }
             }
             .padding(.paddingMedium)
         }
@@ -25,9 +31,9 @@ struct AddExerciseView: View {
     }
 }
 
-struct AddExerciseView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddExerciseView()
-            .previewLayout(.fixed(width: 375, height: 600))
-    }
-}
+//struct AddExerciseView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AddExerciseView(isShowing: true)
+//            .previewLayout(.fixed(width: 375, height: 600))
+//    }
+//}

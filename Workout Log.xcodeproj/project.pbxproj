@@ -31,6 +31,7 @@
 		059FF001245A58F0005C759D /* PlaceholderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FF000245A58F0005C759D /* PlaceholderData.swift */; };
 		05D30952245627E300340F2C /* ChooseExerciseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D30951245627E300340F2C /* ChooseExerciseList.swift */; };
 		05DD3E1C2450FAB100855003 /* CreateWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD3E1B2450FAB100855003 /* CreateWorkoutView.swift */; };
+		05FB331F245CB7F200CCF6B1 /* HelloThereThisIsAsdfghj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB331E245CB7F200CCF6B1 /* HelloThereThisIsAsdfghj.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		059FF000245A58F0005C759D /* PlaceholderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderData.swift; sourceTree = "<group>"; };
 		05D30951245627E300340F2C /* ChooseExerciseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExerciseList.swift; sourceTree = "<group>"; };
 		05DD3E1B2450FAB100855003 /* CreateWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkoutView.swift; sourceTree = "<group>"; };
+		05FB331E245CB7F200CCF6B1 /* HelloThereThisIsAsdfghj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloThereThisIsAsdfghj.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				059F823E24567BA700F936D3 /* RootView.swift */,
 				059D45E5244CF71C009C14F6 /* MainView.swift */,
 				05DD3E1B2450FAB100855003 /* CreateWorkoutView.swift */,
+				05FB331E245CB7F200CCF6B1 /* HelloThereThisIsAsdfghj.swift */,
 				059FEFF3245A3CCE005C759D /* Supporting Views */,
 				059D4613244D0D3D009C14F6 /* Constants.swift */,
 				051FA9CB245BBFA100856B2D /* Extensions.swift */,
@@ -338,6 +341,7 @@
 				051FA9C6245B3F2600856B2D /* WorkoutList.swift in Sources */,
 				059D4614244D0D3D009C14F6 /* Constants.swift in Sources */,
 				059D45E4244CF71C009C14F6 /* SceneDelegate.swift in Sources */,
+				05FB331F245CB7F200CCF6B1 /* HelloThereThisIsAsdfghj.swift in Sources */,
 				059FEFFF245A420D005C759D /* WorkoutView.swift in Sources */,
 				059FEFFD245A40AC005C759D /* ExerciseSet.swift in Sources */,
 				059F823D2456471000F936D3 /* AddExerciseView.swift in Sources */,
