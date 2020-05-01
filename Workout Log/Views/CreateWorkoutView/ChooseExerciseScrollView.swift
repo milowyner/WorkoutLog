@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ChooseExerciseList: View {
+struct ChooseExerciseScrollView: View {
     var exercises = [String](repeating: "Exercise", count: 15)
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
@@ -27,7 +27,7 @@ struct ChooseExerciseList: View {
 
 struct ChooseExerciseList_Previews: PreviewProvider {
     static var previews: some View {
-        ChooseExerciseList()
+        ChooseExerciseScrollView()
             .previewLayout(.fixed(width: 300, height: 300))
     }
 }

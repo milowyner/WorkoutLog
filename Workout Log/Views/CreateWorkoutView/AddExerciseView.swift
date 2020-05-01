@@ -13,7 +13,7 @@ struct AddExerciseView: View {
     
     var body: some View {
         VStack(spacing: 0.0) {
-            ChooseExerciseList()
+            ChooseExerciseScrollView()
                 .padding([.top, .leading, .trailing], .paddingMedium)
             HStack {
                 CustomButton(size: .medium, text: "Create New", icon: "icon-plus")
