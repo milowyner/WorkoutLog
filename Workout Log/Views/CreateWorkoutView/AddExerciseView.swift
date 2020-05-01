@@ -31,9 +31,9 @@ struct AddExerciseView: View {
     }
 }
 
-//struct AddExerciseView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AddExerciseView(isShowing: true)
-//            .previewLayout(.fixed(width: 375, height: 600))
-//    }
-//}
+struct AddExerciseView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddExerciseView(isShowing: .constant(true))
+            .previewLayout(.fixed(width: 375, height: 400))
+    }
+}
