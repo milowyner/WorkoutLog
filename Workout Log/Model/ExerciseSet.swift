@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct ExerciseSet {
+struct ExerciseSet: Identifiable {
+    let id = UUID()
     var weight: Double
     var reps: Int
 }

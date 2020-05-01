@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Exercise {
+struct Exercise: Identifiable {
+    let id = UUID()
     var type: ExerciseType
     var sets = [ExerciseSet]()
     var name: String {

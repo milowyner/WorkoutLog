@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		051FA9C6245B3F2600856B2D /* WorkoutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051FA9C5245B3F2600856B2D /* WorkoutList.swift */; };
+		051FA9CC245BBFA100856B2D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051FA9CB245BBFA100856B2D /* Extensions.swift */; };
+		051FA9CE245BBFC400856B2D /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051FA9CD245BBFC400856B2D /* ExerciseView.swift */; };
 		059D45E2244CF71C009C14F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D45E1244CF71C009C14F6 /* AppDelegate.swift */; };
 		059D45E4244CF71C009C14F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D45E3244CF71C009C14F6 /* SceneDelegate.swift */; };
 		059D45E6244CF71C009C14F6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D45E5244CF71C009C14F6 /* MainView.swift */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		051FA9C5245B3F2600856B2D /* WorkoutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutList.swift; sourceTree = "<group>"; };
+		051FA9CB245BBFA100856B2D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		051FA9CD245BBFC400856B2D /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		059D45DE244CF71C009C14F6 /* Workout Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D45E1244CF71C009C14F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		059D45E3244CF71C009C14F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				05DD3E1B2450FAB100855003 /* CreateWorkoutView.swift */,
 				059FEFF3245A3CCE005C759D /* Supporting Views */,
 				059D4613244D0D3D009C14F6 /* Constants.swift */,
+				051FA9CB245BBFA100856B2D /* Extensions.swift */,
 				059D45E7244CF71D009C14F6 /* Assets.xcassets */,
 				059D45EC244CF71E009C14F6 /* LaunchScreen.storyboard */,
 				059D45EF244CF71E009C14F6 /* Info.plist */,
@@ -177,6 +182,7 @@
 				059F823C2456471000F936D3 /* AddExerciseView.swift */,
 				059D4611244D0801009C14F6 /* CustomButton.swift */,
 				059FEFFE245A420D005C759D /* WorkoutView.swift */,
+				051FA9CD245BBFC400856B2D /* ExerciseView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -325,7 +331,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051FA9CE245BBFC400856B2D /* ExerciseView.swift in Sources */,
 				05DD3E1C2450FAB100855003 /* CreateWorkoutView.swift in Sources */,
+				051FA9CC245BBFA100856B2D /* Extensions.swift in Sources */,
 				059D45E2244CF71C009C14F6 /* AppDelegate.swift in Sources */,
 				051FA9C6245B3F2600856B2D /* WorkoutList.swift in Sources */,
 				059D4614244D0D3D009C14F6 /* Constants.swift in Sources */,

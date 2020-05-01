@@ -15,7 +15,7 @@ struct CreateWorkoutView: View {
     @State var showingAddExerciseView = false
     
     @State var workoutTitle: String = ""
-    @State var exercises = [Exercise]()
+    @State var exercises = [Placeholder.exercise1, Placeholder.exercise2]
     
     var body: some View {
         ZStack {
@@ -31,7 +31,7 @@ struct CreateWorkoutView: View {
                 ScrollView(.vertical, showsIndicators: true) {
                     VStack(spacing: .paddingMedium) {
                         ForEach(exercises) { exercise in
-                            Text("Exercise view here")
+                            ExerciseView(exercise: exercise)
                         }
                     }
                     .padding(.top, .paddingMedium)

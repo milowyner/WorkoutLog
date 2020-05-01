@@ -11,6 +11,7 @@ import SwiftUI
 extension Color {
     static let buttonBackground = { Color("Button Background") }()
     static let containerBackground = { Color("Container Background") }()
+    static let textInputBackground = { Color("Text Input Background") }()
 }
 
 extension CGFloat {
