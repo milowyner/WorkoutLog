@@ -9,7 +9,7 @@
 import Foundation
 
 struct Workout: Identifiable {
-    var id = UUID()
+    let id = UUID()
     var title: String
     var exercises = [Exercise]()
 }

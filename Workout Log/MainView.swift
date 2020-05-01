@@ -10,8 +10,7 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject var currentPage: CurrentPage
-    
-    var workouts = [Placeholder.workout1, Placeholder.workout2, Placeholder.workout1, Placeholder.workout2, Placeholder.workout1]
+    @EnvironmentObject var workoutList: WorkoutList
     
     var body: some View {
         ZStack {
@@ -25,7 +24,7 @@ struct MainView: View {
                 .padding([.leading, .trailing, .top], .paddingLarge)
                 ScrollView(.vertical, showsIndicators: true) {
                     VStack(spacing: .paddingMedium) {
-                        ForEach(workouts) { workout in
+                        ForEach(workoutList.workouts) { workout in
                             WorkoutView(workout: workout)
                         }
                     }
@@ -54,6 +53,8 @@ struct MainView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView().environmentObject(CurrentPage())
+        MainView()
+            .environmentObject(CurrentPage())
+            .environmentObject(WorkoutList())
     }
 }

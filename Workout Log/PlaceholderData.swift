@@ -9,6 +9,8 @@
 import Foundation
 
 struct Placeholder {
+    static let workoutList = [workout1, workout2]
+    
     static let workout1 = Workout(title: "My Workout", exercises: [
         Exercise(type: ExerciseType(name: "Squat"),
                  sets: [ExerciseSet](repeating:
