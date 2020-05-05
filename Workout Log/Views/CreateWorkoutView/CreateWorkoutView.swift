@@ -53,7 +53,6 @@ struct CreateWorkoutView: View {
                     }
                     Spacer()
                     CustomButton(size: .large, text: "Add Exercise", icon: "icon-plus") {
-                        print("Add exercise button tapped")
                         withAnimation {
                             self.showingAddExerciseView = true
                         }
@@ -65,10 +64,9 @@ struct CreateWorkoutView: View {
             VStack {
                 Spacer()
                 if showingAddExerciseView {
-                    AddExerciseView(isShowing: $showingAddExerciseView)
+                    AddExerciseView(exercises: $exercises, isShowing: $showingAddExerciseView)
                         .padding(.paddingMedium)
                         .frame(height: UIScreen.main.bounds.height * 0.5)
-                        .shadow(color: Color.black.opacity(0.5), radius: 32, x: 0, y: 16)
                         .transition(AnyTransition.scale(scale: 0.4).combined(with:
                             AnyTransition.opacity.combined(with:
                                 AnyTransition.offset(

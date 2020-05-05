@@ -11,12 +11,20 @@ import SwiftUI
 struct ChooseExerciseScrollView: View {
     @EnvironmentObject var userData: UserData
     
+    @Binding var exercises: [Exercise]
+    @Binding var isShowing: Bool
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
             VStack {
                 ForEach(userData.exerciseTypes.sorted { $0.name < $1.name }, id: \.self) { type in
                     HStack {
-                        CustomButton(size: .medium, text: type.name)
+                        CustomButton(size: .medium, text: type.name) {
+                            self.exercises.append(Exercise(type: type))
+                            withAnimation {
+                                self.isShowing = false
+                            }
+                        }
                         Spacer()
                     }
                 }
@@ -28,7 +36,7 @@ struct ChooseExerciseScrollView: View {
 
 struct ChooseExerciseList_Previews: PreviewProvider {
     static var previews: some View {
-        ChooseExerciseScrollView()
+        ChooseExerciseScrollView(exercises: .constant([]), isShowing: .constant(true))
             .previewLayout(.fixed(width: 300, height: 300))
         .environmentObject(UserData())
     }
