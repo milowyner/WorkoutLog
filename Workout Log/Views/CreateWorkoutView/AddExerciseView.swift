@@ -11,12 +11,12 @@ import SwiftUI
 struct AddExerciseView: View {
     @EnvironmentObject var userData: UserData
     
-    @Binding var exercises: [Exercise]
+    @Binding var exerciseToBeAdded: Exercise?
     @Binding var isShowing: Bool
     
     var body: some View {
         VStack(spacing: 0.0) {
-            ChooseExerciseScrollView(exercises: $exercises, isShowing: $isShowing)
+            ChooseExerciseScrollView(exerciseToBeAdded: $exerciseToBeAdded, isShowing: $isShowing)
                 .padding([.top, .leading, .trailing], .paddingMedium)
             HStack {
                 CustomButton(size: .medium, text: "Create New", icon: "icon-plus")
@@ -38,7 +38,7 @@ struct AddExerciseView: View {
 
 struct AddExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        AddExerciseView(exercises: .constant([]), isShowing: .constant(true))
+        AddExerciseView(exerciseToBeAdded: .constant(nil), isShowing: .constant(true))
             .previewLayout(.fixed(width: 375, height: 400))
         .environmentObject(UserData())
     }

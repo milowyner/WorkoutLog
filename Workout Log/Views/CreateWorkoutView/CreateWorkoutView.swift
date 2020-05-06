@@ -17,6 +17,8 @@ struct CreateWorkoutView: View {
     @State var workoutTitle: String = ""
     @State var exercises = [Placeholder.exercise1, Placeholder.exercise2]
     
+    @State var exerciseToBeAdded: Exercise?
+    
     var body: some View {
         ZStack {
             VStack(spacing: .paddingMedium) {
@@ -64,7 +66,7 @@ struct CreateWorkoutView: View {
             VStack {
                 Spacer()
                 if showingAddExerciseView {
-                    AddExerciseView(exercises: $exercises, isShowing: $showingAddExerciseView)
+                    AddExerciseView(exerciseToBeAdded: $exerciseToBeAdded, isShowing: $showingAddExerciseView)
                         .padding(.paddingMedium)
                         .frame(height: UIScreen.main.bounds.height * 0.5)
                         .transition(AnyTransition.scale(scale: 0.4).combined(with:
@@ -72,6 +74,14 @@ struct CreateWorkoutView: View {
                                 AnyTransition.offset(
                                     x: UIScreen.main.bounds.width / 5,
                                     y: UIScreen.main.bounds.height / 10))))
+                        .onDisappear {
+                            if let exercise = self.exerciseToBeAdded {
+                                withAnimation {
+                                    self.exercises.append(exercise)
+                                }
+                                self.exerciseToBeAdded = nil
+                            }
+                    }
                 }
             }
         }
